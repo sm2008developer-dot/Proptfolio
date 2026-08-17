@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumalya Mukherjee | Android App Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Soumalya<span>.</span></a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#contact" class="btn-nav" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <select id="langSelect" class="lang-select">
+          <option value="en">EN</option>
+          <option value="bn">BN</option>
+        </select>
+
+        <!-- Theme Toggle Button with Real SVG Icons -->
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+          <svg id="icon-sun" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        
+        <!-- Mobile Menu SVG Icon -->
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Toggle Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container hero-content">
+        <div class="hero-image-wrapper reveal">
+          <img src="assets/images/profile.webp" alt="Soumalya Mukherjee" width="180" height="180" class="profile-img">
+        </div>
+        <p class="greeting reveal" data-i18n="hero_greeting">Hello, I am</p>
+        <h1 class="reveal" data-i18n="hero_name">Soumalya Mukherjee</h1>
+        <h2 class="tagline reveal"><span data-i18n="hero_tagline">An Indie </span> <span id="typewriter"></span><span class="cursor">|</span></h2>
+        <p class="hero-desc reveal" data-i18n="hero_desc">I build lightweight, user-centric, and viral Android utility apps. Passionate about solving real-world user needs with clean UI and high performance.</p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary" data-i18n="btn_projects">View Projects</a>
+          <a href="assets/docs/resume.pdf" download class="btn btn-secondary" data-i18n="btn_resume">Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="title_about">About Me</h2>
+        <div class="about-card">
+          <p data-i18n="desc_about">I am an independent App Creator specializing in Java and Kotlin. My focus is on creating lightweight and viral Android applications like 'PromptMast AI' that deliver seamless experiences across all devices. I manage the entire product lifecycle from conceptualization to APK deployment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-alt reveal">
+      <div class="container">
+        <h2 class="section-title" data-i18n="title_projects">Featured Apps</h2>
+        <div class="projects-grid">
+          
+          <article class="project-card reveal">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-1.webp" alt="PromptMast AI" loading="lazy" class="project-img">
+            </div>
+            <div class="project-body">
+              <h3>PromptMast AI</h3>
+              <p data-i18n="project_1_desc">A viral AI-driven prompt utility application designed for fast and effective prompt generation. Lightweight and zero-lag performance.</p>
+              <div class="project-tech">
+                <span>Java</span>
+                <span>Kotlin</span>
+                <span>Android Studio</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="link-btn" data-i18n="btn_download_apk">Download on APKPure</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
